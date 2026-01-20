@@ -28,12 +28,11 @@ export function HeroSection() {
         {/* Subtitle line with Invite-Only Badge */}
         <div className="flex items-center mb-4">
           <div
-            className="mr-3 border flex items-center justify-center rounded-lg bg-[#00FFFF] border-[#0b1b4c]"
+            className="mr-2 md:mr-3 border flex items-center justify-center rounded-lg bg-[#00FFFF] border-[#0b1b4c] h-8 md:h-10"
             style={{
-              height: '40px',
-              minWidth: '150px',
+              minWidth: '120px',
               boxShadow: '0 10px 22px rgba(0, 0, 0, 0.45)',
-              padding: '8px 14px',
+              padding: '6px 12px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -42,17 +41,16 @@ export function HeroSection() {
             <img
               src="/Invite-Only.png"
               alt="Invite-Only"
+              className="h-5 md:h-6"
               style={{
-                height: '24px',
                 width: 'auto',
                 display: 'block'
               }}
             />
           </div>
           <p
-            className="text-cyan-400"
+            className="text-cyan-400 text-sm md:text-lg"
             style={{
-              fontSize: '18px',
               fontWeight: '300',
               lineHeight: '100%',
               letterSpacing: '0%',
@@ -65,9 +63,9 @@ export function HeroSection() {
 
         {/* Title */}
         <h1 className="mb-6 md:mb-8 text-start">
-          <span className="block" style={{ fontSize: '42px', fontWeight: '700', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>The Skills That Matter Next:</span>
-          <span className="block mt-1" style={{ fontSize: '42px', fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>Preparing Your Workforce</span>
-          <span className="block mt-1" style={{ fontSize: '42px', fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>& Leaders for the AI Era</span>
+          <span className="block text-[28px] md:text-[42px]" style={{ fontWeight: '700', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>The Skills That Matter Next:</span>
+          <span className="block mt-1 text-[28px] md:text-[42px]" style={{ fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>Preparing Your Workforce</span>
+          <span className="block mt-1 text-[28px] md:text-[42px]" style={{ fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>& Leaders for the AI Era</span>
         </h1>
 
         {/* Event Details */}
