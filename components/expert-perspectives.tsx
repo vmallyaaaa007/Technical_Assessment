@@ -14,7 +14,7 @@ export function ExpertPerspectives() {
         >
           {/* Background image overlay */}
           <Image
-            src="/images/try SLH+.png"
+            src="/images/try%20SLH%2B.png"
             alt="Additional Expert Perspectives Background"
             fill
             className="object-cover rounded-md"

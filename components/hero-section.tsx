@@ -5,21 +5,21 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[400px] md:min-h-[320px] overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('/images/background.png')`,
           backgroundPosition: 'center center'
         }}
       />
-      
+
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto px-5 md:px-8 py-6 md:py-8">
         {/* Header with Logo */}
         <div className="mb-2">
           {/* Logo */}
-          <img 
-            src="/new_logo 2.png" 
+          <img
+            src="/new_logo 2.png"
             alt="Simplilearn"
             className="h-8 md:h-10 w-auto"
           />
@@ -28,23 +28,32 @@ export function HeroSection() {
         {/* Subtitle line with Invite-Only Badge */}
         <div className="flex items-center mb-4">
           <div
-            className="font-bold px-4 py-2 mr-3 border flex items-center justify-center rounded-lg bg-[#00FFFF] text-[#0b1b4c] border-[#0b1b4c]"
+            className="mr-3 border flex items-center justify-center rounded-lg bg-[#00FFFF] border-[#0b1b4c]"
             style={{
-              fontSize: '15px',
-              lineHeight: '100%',
-              letterSpacing: '0%',
-              height: '48px',
-              minWidth: '170px',
+              height: '40px',
+              minWidth: '150px',
               boxShadow: '0 10px 22px rgba(0, 0, 0, 0.45)',
-              textDecoration: 'none'
+              padding: '8px 14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
             }}
           >
-            Invite-Only
+            <img
+              src="/Invite-Only.png"
+              alt="Invite-Only"
+              style={{
+                height: '24px',
+                width: 'auto',
+                display: 'block'
+              }}
+            />
           </div>
           <p
-            className="font-bold text-cyan-400"
+            className="text-cyan-400"
             style={{
               fontSize: '18px',
+              fontWeight: '300',
               lineHeight: '100%',
               letterSpacing: '0%',
               textShadow: '1px 0 #0b1b4c, -1px 0 #0b1b4c, 0 1px #0b1b4c, 0 -1px #0b1b4c, 0 3px 8px rgba(0, 0, 0, 0.45)'
@@ -56,20 +65,20 @@ export function HeroSection() {
 
         {/* Title */}
         <h1 className="mb-6 md:mb-8 text-start">
-          <span className="block font-bold" style={{ fontSize: '42px', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>The Skills That Matter Next:</span>
-          <span className="block mt-1 font-normal" style={{ fontSize: '42px', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>Preparing Your Workforce</span>
-          <span className="block mt-1 font-normal" style={{ fontSize: '42px', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>& Leaders for the AI Era</span>
+          <span className="block" style={{ fontSize: '42px', fontWeight: '700', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>The Skills That Matter Next:</span>
+          <span className="block mt-1" style={{ fontSize: '42px', fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>Preparing Your Workforce</span>
+          <span className="block mt-1" style={{ fontSize: '42px', fontWeight: '300', lineHeight: '1.05', letterSpacing: '-0.01em', color: '#FFA500' }}>& Leaders for the AI Era</span>
         </h1>
 
         {/* Event Details */}
         <div className="flex flex-col gap-2 mb-6">
           <div className="flex items-center gap-2 text-white">
             <Calendar className="w-4 h-4" />
-            <span className="text-xs md:text-[13px] font-bold">February 20, 2026</span>
+            <span className="text-xs md:text-[13px]" style={{ fontWeight: '700' }}>February 20, 2026</span>
           </div>
           <div className="flex items-center gap-2 text-white">
             <MapPin className="w-4 h-4" />
-            <span className="text-xs md:text-[13px] font-bold">Chamberlain&apos;s Steak & Fish House, Dallas</span>
+            <span className="text-xs md:text-[13px]" style={{ fontWeight: '700' }}>Chamberlain&apos;s Steak & Fish House, Dallas</span>
           </div>
         </div>
 

@@ -24,21 +24,23 @@ export function AgendaSection() {
         <h2 className="text-xl md:text-2xl font-bold mb-5 md:mb-8" style={{ color: '#1D4DF4' }}>
           Event Agenda
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {agendaItems.map((item, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg p-4 md:p-5 h-full"
+            <div
+              key={index}
+              className="bg-white rounded-lg p-6 md:p-8 h-full flex flex-col min-h-[320px]"
             >
-              <h3 className="font-bold text-sm mb-2 md:mb-3" style={{ color: '#1D4DF4' }}>
+              <h3 className="font-bold text-lg md:text-xl mb-4 leading-tight min-h-[60px] md:min-h-[140px]" style={{ color: '#1D4DF4' }}>
                 {item.title}
                 {item.subtitle && (
-                  <span className="block" style={{ color: '#1D4DF4' }}>{item.subtitle}</span>
+                  <span className="block mt-1" style={{ color: '#1D4DF4' }}>{item.subtitle}</span>
                 )}
               </h3>
-              <p className="text-black text-xs font-medium mb-2 md:mb-3 font-bold">{item.speaker}</p>
-              <p className="text-gray-500 text-xs leading-relaxed">{item.description}</p>
+              <div>
+                <p className="text-black text-sm md:text-base font-bold mb-3 md:mb-4">{item.speaker}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
