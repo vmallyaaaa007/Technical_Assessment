@@ -12,36 +12,39 @@ const insights = [
 export function InsightsSection() {
   return (
     <section className="bg-[#f5f5f0] py-8 md:py-10 px-5 md:px-6">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto " >
         <h2 className="text-lg md:text-2xl font-bold leading-tight mb-5 md:mb-6" style={{ color: '#f5a623' }}>
           Go behind the curtain with real<br />
           examples and high-scale insights
         </h2>
         
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Left content */}
-          <div className="flex-1">
+        <div className="">
+          {/* Left content with border */}
+                    {/* Chess image - appears after text on desktop */}
+          <div className="w-[400px] md:w-68 flex-shrink-0 flex justify-center md:justify-end mt-6 md:mt-0  relative">
+            <Image 
+              src="/images/chess-pieces.png" 
+              alt="Chess pieces"
+              width={450}
+              height={500}
+              className="object-contain border-2  absolute left-120 top-0 bottom-0 z-0 object-cover"
+            />
+          </div>
+
+          <div className="flex-1 relative  ">
             <h3 className="text-gray-800 text-sm font-semibold mb-3 md:mb-4 font-bold">You&apos;ll walk away with:</h3>
             <ul className="space-y-3 md:space-y-4">
               {insights.map((insight, index) => (
-                <li key={index} className="flex items-start">
+                <li key={index} className="flex items-start ">
                   <span className="w-1 bg-amber-400 self-stretch mr-3 flex-shrink-0" />
-                  <span className="text-gray-600 text-xs md:text-[13px] leading-relaxed">{insight}</span>
+                  <span className="w-[200px] "></span>
+                  <span className="text-black text-xs md:text-[13px] leading-relaxed flex-1 font-bold ">{insight}</span>
                 </li>
               ))}
             </ul>
           </div>
           
-          {/* Chess image - shown below on mobile, on right on desktop */}
-          <div className="w-full md:w-48 flex-shrink-0 flex justify-center md:justify-end">
-            <Image 
-              src="/images/chess-pieces.png" 
-              alt="Chess pieces"
-              width={200}
-              height={250}
-              className="object-contain w-40 md:w-48"
-            />
-          </div>
+
         </div>
 
         <div className="mt-6 md:mt-8">
