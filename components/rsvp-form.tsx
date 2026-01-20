@@ -20,12 +20,13 @@ export function RSVPForm({ variant = "light" }: RSVPFormProps) {
     setIsSubmitting(true)
     setMessage(null)
 
-    const formData = new FormData(e.currentTarget)
+    const form = e.currentTarget
+    const formData = new FormData(form)
     const result = await submitRSVP(formData)
 
     if (result.success) {
       setMessage({ type: 'success', text: result.message || 'RSVP submitted successfully!' })
-      e.currentTarget.reset()
+      form.reset()
       setShowFullForm(false)
     } else {
       setMessage({ type: 'error', text: result.error || 'Submission failed' })

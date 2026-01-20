@@ -13,25 +13,17 @@ const satoshi = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'The Skills That Matter Next | Simplilearn Executive Roundtable',
+  title: 'SDE-1 Assessment',
   description: 'Preparing Your Workforce & Leaders for the AI Era - An invite-only executive roundtable',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/favicon.png',
+        sizes: '32x32',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/favicon.png',
   },
 }
 

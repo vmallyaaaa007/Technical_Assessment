@@ -71,12 +71,12 @@ export function HeroSection() {
         {/* Event Details */}
         <div className="flex flex-col gap-2 mb-6">
           <div className="flex items-center gap-2 text-white">
-            <Calendar className="w-4 h-4" />
-            <span className="text-xs md:text-[13px]" style={{ fontWeight: '700' }}>February 20, 2026</span>
+            <Calendar className="w-5 h-5 md:w-6 md:h-6" />
+            <span className="text-lg md:text-2xl" style={{ fontWeight: '700' }}>February 20, 2026</span>
           </div>
           <div className="flex items-center gap-2 text-white">
-            <MapPin className="w-4 h-4" />
-            <span className="text-xs md:text-[13px]" style={{ fontWeight: '700' }}>Chamberlain&apos;s Steak & Fish House, Dallas</span>
+            <MapPin className="w-5 h-5 md:w-6 md:h-6" />
+            <span className="text-lg md:text-2xl" style={{ fontWeight: '700' }}>Chamberlain&apos;s Steak & Fish House, Dallas</span>
           </div>
         </div>
 
