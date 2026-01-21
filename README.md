@@ -67,7 +67,9 @@ Required Environment Variables
 Create a file named .env and add:
 
 AIRTABLE_TOKEN=your_airtable_api_token
+
 AIRTABLE_BASE_ID=your_airtable_base_id
+
 AIRTABLE_TABLE_NAME=your_airtable_table_name
 
 
