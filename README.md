@@ -62,7 +62,13 @@ A modern, responsive event landing page built with Next.js 16, TypeScript, and T
 │   └── favicon.png       # Custom favicon
 └── README.md             # Project documentation
 ```
+Required Environment Variables
 
+Create a file named .env and add:
+
+AIRTABLE_TOKEN=your_airtable_api_token
+AIRTABLE_BASE_ID=your_airtable_base_id
+AIRTABLE_TABLE_NAME=your_airtable_table_name
 
 
 ### RSVP Form
